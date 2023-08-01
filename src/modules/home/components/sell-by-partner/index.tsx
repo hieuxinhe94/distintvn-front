@@ -10,7 +10,7 @@ const SellbyPartnerProducts = () => {
 
   return (
     <div className="py-12 bg-indigo-100">
-      <div className="content-container py-12">
+      <div className="content-container py-2">
         <div className="flex flex-col items-center text-center mb-16">
           {/* <span className="text-base-regular text-gray-600 mb-6">
             Các thiết kế recommend theo từng sở thích khách hàng
@@ -20,7 +20,7 @@ const SellbyPartnerProducts = () => {
           </p>
           <UnderlineLink href="/store">Xem tất cả</UnderlineLink>
         </div>
-        <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-4 gap-y-8">
+        <ul className="grid grid-cols-2 small:grid-cols-6 gap-x-4 gap-y-8">
           {data
             ? data.map((product) => (
                 <li key={product.id}>

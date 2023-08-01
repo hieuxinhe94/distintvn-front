@@ -9,7 +9,7 @@ const SuggestionProducts = () => {
   const { data } = useFeaturedProductsQuery()
 
   return (
-    <div className="py-12 bg-amber-100/5 py-24">
+    <div className="py-12 bg-amber-100/5 py-2">
       <div className="content-container py-12">
         <div className="flex flex-col items-center text-center mb-16">
           {/* <span className="text-base-regular text-gray-600 mb-6">
@@ -20,7 +20,7 @@ const SuggestionProducts = () => {
           </p>
           <UnderlineLink href="/store">Xem tất cả gợi ý</UnderlineLink>
         </div>
-        <ul className="grid grid-cols-2 small:grid-cols-4 gap-x-4 gap-y-8">
+        <ul className="grid grid-cols-2 small:grid-cols-6 gap-x-4 gap-y-8">
           {data
             ? data.map((product) => (
                 <li key={product.id}>

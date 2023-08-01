@@ -46,14 +46,14 @@ const Hero = () => {
       </div>
 
       <div className="w-full h-full flex justify-end">
-        <div className="mx-96 py-64">
+        <div className="mx-96 py-32">
           <lottie-player
             id="firstLottie"
             ref={ref}
             autoplay
             mode="normal"
             src="./json.json"
-            style={{ width: "400px", height: "400px" }}
+            style={{ width: "500px", height: "500px" }}
           ></lottie-player>
         </div>
       </div>

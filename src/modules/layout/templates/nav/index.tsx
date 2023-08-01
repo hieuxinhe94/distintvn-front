@@ -49,7 +49,7 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          "relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
+          "relative h-24 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-white group-hover:border-gray-200",
           {
             "!bg-white !border-gray-200": !isHome || isScrolled,
           }
@@ -57,7 +57,7 @@ const Nav = () => {
       >
         <nav
           className={clsx(
-            "text-gray-900 flex items-center justify-between w-10/12 justify-center mx-auto h-full text-small-regular transition-colors duration-200",
+            "text-gray-900 flex items-center justify-between w-5/6 justify-center mx-auto h-full text-small-regular transition-colors duration-200",
             {
               "text-white group-hover:text-gray-900": isHome && !isScrolled,
             }
@@ -66,16 +66,21 @@ const Nav = () => {
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="block small:hidden">
               <Hamburger setOpen={toggle} />
+           
             </div>
+         
             <div className="hidden small:block h-full">
+           
               <DropdownMenu />
+            
             </div>
+            <Link href="/" className="text-lg font-bold mx-2 uppercase">
+            UNIQUE
+            </Link>
           </div>
 
           <div className="flex items-center h-full">
-            <Link href="/" className="text-xl-semi uppercase">
-            DISTINCT.VN
-            </Link>
+           
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
