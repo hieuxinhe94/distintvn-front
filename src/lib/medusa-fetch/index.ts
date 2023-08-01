@@ -1,7 +1,7 @@
 const MEDUSA_API_KEY = process.env.NEXT_PUBLIC_MEDUSA_API_KEY || ""
 const REVALIDATE_WINDOW = process.env.REVALIDATE_WINDOW || "1000 * 60 * 60" // 10 minutes
 const ENDPOINT =
-  process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || "http://localhost:9000"
+  process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || "https://distinctvn-admin-production.up.railway.app"
 
 export default async function medusaRequest(
   method: string,

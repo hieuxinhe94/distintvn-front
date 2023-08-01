@@ -40,9 +40,10 @@ const fetchCollectionProducts = async ({
 const CollectionTemplate: React.FC<CollectionTemplateProps> = ({
   collection,
 }) => {
+  debugger
   const { cart } = useCart()
   const { ref, inView } = useInView()
-
+debugger
   const {
     data: infiniteData,
     hasNextPage,

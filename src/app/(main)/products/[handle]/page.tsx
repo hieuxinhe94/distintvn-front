@@ -12,15 +12,17 @@ async function getProducts(handle: string) {
       handle,
     },
   })
-
   if (!res.ok) {
+    console.log(res)
     throw new Error(`Failed to fetch product: ${handle}`)
+    
   }
 
   return res.body
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  console.log(params.handle)
   const { products } = await getProducts(params.handle)
 
   const product = products[0]
@@ -38,6 +40,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CollectionPage({ params }: Props) {
   const { products } = await getProducts(params.handle)
-
+  
   return <ProductTemplate product={products[0]} />
 }

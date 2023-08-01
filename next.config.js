@@ -14,6 +14,9 @@ module.exports = withStoreConfig({
       "medusa-server-testing.s3.amazonaws.com",
     ],
   },
+  env: {
+    NEXT_PUBLIC_MEDUSA_BACKEND_URL: 'https://distinctvn-admin-production.up.railway.app',
+  },
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
